@@ -7,10 +7,10 @@ function randomValueFromArray(array){
   return array[random];
 }
 
-const storyText = 'その日はとても寒かった。 だから :insertx: は出かけた。, :inserty:　に着いた時、 , they stared in horror for a few moments, then :insertz:. Bob saw the whole thing, but was not surprised — :insertx: weighs 300 pounds, and it was a hot day.';
+const storyText = 'その日はとても寒かった。 だから :insertx: は出かけた。 :inserty:　に着いた時、  :insertz:. Bob saw the whole thing, 体重50kgの:insertx:は驚かなかったが、 その日はとても寒かった';
 const insertX = ['プーさん', 'キティちゃん', 'エルモ'];
 const insertY = ['東京スカイツリー', 'ユニバーサルスタジオジャパン', '富士急ハイランド'];
-const insertZ = ['spontaneously combusted', 'melted into a puddle on the sidewalk', 'turned into a slug and crawled away'];
+const insertZ = ['雪が降っていた', '雨が降っていた', '虹が出ていた'];
 
 randomize.addEventListener('click', result);
 
