@@ -1,4 +1,4 @@
-
+const customName = document.getElementById('customname');
 const randomize = document.querySelector('.randomize');
 const story = document.querySelector('.story');
 
@@ -7,7 +7,7 @@ function randomValueFromArray(array){
   return array[random];
 }
 
-const storyText = 'その日はとても寒かった. だから :insertx: は出かけた. :inserty:　に着いた時、 :insertz:. 体重50kgの:insertx:は驚いたが、:customName:は驚かなかった. なぜなら :inserty: ではよくあることだったからだ';
+const storyText = 'その日はとても寒かった. だから :insertx: は出かけた. :inserty:　に着いた時、 :insertz:. 体重50kgの:insertx:は驚いたが、:Name:は驚かなかった. なぜなら :inserty: ではよくあることだったからだ';
 const insertX = ['プーさん', 'キティちゃん', 'エルモ'];
 const insertY = ['東京スカイツリー', 'ユニバーサルスタジオジャパン', '富士急ハイランド'];
 const insertZ = ['雪が降っていた', '雨が降っていた', '虹が出ていた'];
@@ -20,12 +20,12 @@ function result() {
   const xItem = randomValueFromArray(insertX);
   const yItem = randomValueFromArray(insertY);
   const zItem = randomValueFromArray(insertZ);
-  const customName = document.getElementById('customname');
+  const Name = customName.value;
   
   newStory = newStory.replace(':insertx:',xItem);
   newStory = newStory.replace(':insertx:',xItem);
   newStory = newStory.replace(':inserty:',yItem);
-  newStory = newStory.replace(':customName:',customName);
+  newStory = newStory.replace(':Name:',customName);
   newStory = newStory.replace(':inserty:',yItem);
   newStory = newStory.replace(':insertz:',zItem);
 
