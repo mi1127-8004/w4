@@ -20,7 +20,7 @@ function result() {
   const xItem = randomValueFromArray(insertX);
   const yItem = randomValueFromArray(insertY);
   const zItem = randomValueFromArray(insertZ);
-  const Name = customName.id;
+  const Name = customName.value;
   
   newStory = newStory.replace(':insertx:',xItem);
   newStory = newStory.replace(':insertx:',xItem);
